@@ -2,8 +2,8 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 load_dotenv()
-
-endpoint = "https://foundarysdws.services.ai.azure.com/openai/v1"
+###endpoint = os.environ["llm_endpoint"]
+endpoint = os.environ["llm_endpoint"]
 deployment_name = "gpt-4.1-mini"
 api_key = os.environ["API_KEY"]
 
